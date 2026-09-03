@@ -96,9 +96,12 @@ export function SiteHeader() {
       {open && (
         <div
           id="mobile-nav"
-          className="border-t border-border bg-background lg:hidden"
+          className="fixed inset-x-0 bottom-0 top-18 z-50 overflow-y-auto overscroll-contain border-t border-border bg-background lg:hidden"
         >
-          <nav aria-label="Mobile Navigation" className="container-page py-4">
+          <nav
+            aria-label="Mobile Navigation"
+            className="container-page flex min-h-full flex-col py-5"
+          >
             <ul className="flex flex-col">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
