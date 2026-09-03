@@ -8,6 +8,18 @@ Das Projekt entstand im Rahmen einer Praxis-Challenge mit dem Ziel, innerhalb ei
 
 https://rheinruhr-haus-design.lovable.app
 
+## Live Demo
+
+[Landingpage ansehen](DEIN-LOVABLE-LINK)
+
+## Challenge Documentation
+
+- [AI Prompts](challenge-documentation/01-prompts.md)
+- [Workflow](challenge-documentation/02-workflow.md)
+- [Hosting & Deployment](challenge-documentation/03-deployment.md)
+- [Scalability Concept](challenge-documentation/04-scalability.md)
+- [AI Reflection](challenge-documentation/05-ai-reflection.md)
+
 ## Ziel
 
 Die Landingpage richtet sich an Eigenheimbesitzer in Düsseldorf und Umgebung, die sich für Heizungsmodernisierung, Wärmepumpen oder Badsanierung interessieren.
