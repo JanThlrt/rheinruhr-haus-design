@@ -1,8 +1,8 @@
 export const COMPANY = {
   name: "RheinRuhr Haustechnik GmbH",
   short: "RheinRuhr Haustechnik",
-  street: "Gerresheimer Straße 148",
-  zipCity: "40233 Düsseldorf",
+  street: "Musterstraße 12",
+  zipCity: "40213 Düsseldorf",
   phone: "0211 XXX XXX",
   phoneHref: "tel:+49211000000",
   email: "info@rheinruhr-haustechnik.de",

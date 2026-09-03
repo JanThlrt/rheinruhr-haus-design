@@ -23,6 +23,7 @@ export function SiteHeader() {
   }, [open]);
 
   return (
+    <>
     <header
       className={cn(
         "fixed inset-x-0 top-0 z-50 border-b transition-all duration-300",
@@ -93,12 +94,17 @@ export function SiteHeader() {
         </button>
       </div>
 
+    </header>
+
       {open && (
         <div
           id="mobile-nav"
-          className="border-t border-border bg-background lg:hidden"
+          className="fixed inset-x-0 bottom-0 top-18 z-40 overflow-y-auto overscroll-contain border-t border-border bg-background lg:hidden"
         >
-          <nav aria-label="Mobile Navigation" className="container-page py-4">
+          <nav
+            aria-label="Mobile Navigation"
+            className="container-page flex min-h-full flex-col py-5"
+          >
             <ul className="flex flex-col">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
@@ -125,6 +131,6 @@ export function SiteHeader() {
           </nav>
         </div>
       )}
-    </header>
+    </>
   );
 }
