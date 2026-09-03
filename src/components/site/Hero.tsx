@@ -12,7 +12,7 @@ export function Hero() {
             SHK-Meisterbetrieb · Düsseldorf
           </p>
 
-          <h1 className="mt-5 text-[1.75rem] font-extrabold leading-[1.12] text-foreground xs:text-[2rem] sm:mt-6 sm:text-5xl sm:leading-[1.08] lg:text-[3.4rem]">
+          <h1 className="mt-5 text-[1.75rem] font-extrabold leading-[1.12] text-foreground sm:mt-6 sm:text-5xl sm:leading-[1.08] lg:text-[3.4rem]">
             Heizung, Bad und Wärmepumpe – fachgerecht geplant und umgesetzt
           </h1>
 
