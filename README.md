@@ -8,10 +8,6 @@ Das Projekt entstand im Rahmen einer Praxis-Challenge mit dem Ziel, innerhalb ei
 
 https://rheinruhr-haus-design.lovable.app
 
-## Live Demo
-
-[Landingpage ansehen](DEIN-LOVABLE-LINK)
-
 ## Challenge Documentation
 
 - [AI Prompts](challenge-documentation/01-prompts.md)
