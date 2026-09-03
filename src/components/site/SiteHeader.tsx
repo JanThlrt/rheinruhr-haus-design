@@ -94,10 +94,12 @@ export function SiteHeader() {
         </button>
       </div>
 
+    </header>
+
       {open && (
         <div
           id="mobile-nav"
-          className="fixed inset-x-0 bottom-0 top-18 z-50 overflow-y-auto overscroll-contain border-t border-border bg-background lg:hidden"
+          className="fixed inset-x-0 bottom-0 top-18 z-40 overflow-y-auto overscroll-contain border-t border-border bg-background lg:hidden"
         >
           <nav
             aria-label="Mobile Navigation"
