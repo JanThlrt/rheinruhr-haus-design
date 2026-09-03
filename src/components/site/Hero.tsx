@@ -6,22 +6,22 @@ import { COMPANY } from "./data";
 export function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-surface pt-18">
-      <div className="container-page grid items-center gap-12 py-14 md:py-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:py-24">
+      <div className="container-page grid items-center gap-9 py-10 sm:gap-12 sm:py-14 md:py-20 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:py-24">
         <div className="max-w-2xl">
           <p className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">
             SHK-Meisterbetrieb · Düsseldorf
           </p>
 
-          <h1 className="mt-6 text-4xl font-extrabold leading-[1.08] text-foreground sm:text-5xl lg:text-[3.4rem]">
+          <h1 className="mt-5 text-[1.75rem] font-extrabold leading-[1.12] text-foreground xs:text-[2rem] sm:mt-6 sm:text-5xl sm:leading-[1.08] lg:text-[3.4rem]">
             Heizung, Bad und Wärmepumpe – fachgerecht geplant und umgesetzt
           </h1>
 
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground sm:mt-6 sm:text-lg">
             Ihr Meisterbetrieb für moderne Haustechnik in Düsseldorf und
             Umgebung. Von der ersten Beratung bis zur Umsetzung aus einer Hand.
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-7 flex flex-col gap-3 sm:mt-9 sm:flex-row">
             <Button asChild variant="cta" size="xl">
               <a href="#kontakt">Kostenlose Beratung anfragen</a>
             </Button>
