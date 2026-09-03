@@ -1,24 +1,54 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+import { SiteHeader } from "@/components/site/SiteHeader";
+import { Hero } from "@/components/site/Hero";
+import { TrustBar } from "@/components/site/TrustBar";
+import { Services } from "@/components/site/Services";
+import { Benefits } from "@/components/site/Benefits";
+import { HeatPump } from "@/components/site/HeatPump";
+import { Process } from "@/components/site/Process";
+import { Projects } from "@/components/site/Projects";
+import { About } from "@/components/site/About";
+import { Faq } from "@/components/site/Faq";
+import { Contact } from "@/components/site/Contact";
+import { SiteFooter } from "@/components/site/SiteFooter";
+
+const TITLE = "RheinRuhr Haustechnik | SHK-Meisterbetrieb Düsseldorf";
+const DESCRIPTION =
+  "Heizung, Wärmepumpe und Badsanierung aus einer Hand: Ihr SHK-Meisterbetrieb für Düsseldorf und Umgebung. Kostenlose Erstberatung anfragen.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: TITLE },
+      { name: "description", content: DESCRIPTION },
+      { property: "og:title", content: TITLE },
+      { property: "og:description", content: DESCRIPTION },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "de_DE" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
+    <div className="min-h-screen bg-background">
+      <SiteHeader />
+      <main>
+        <Hero />
+        <TrustBar />
+        <Services />
+        <Benefits />
+        <HeatPump />
+        <Process />
+        <Projects />
+        <About />
+        <Faq />
+        <Contact />
+      </main>
+      <SiteFooter />
     </div>
   );
 }
